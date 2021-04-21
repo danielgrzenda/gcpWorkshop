@@ -43,7 +43,7 @@ curl api.ipify.org; echo ""
 #sudo apt update  
 #sudo apt upgrade  
 sudo apt update && sudo apt -y install apache2  
-echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html  
+echo '\<!doctype html\>\<html\>\<body\>\<h1\>Hello World!\</h1\>\</body\>\</html\>' | sudo tee /var/www/html/index.html  
 gcloud compute firewall-rules create ingress-tcp-port80-from-all \  
     --action allow \  
     --direction ingress \  
