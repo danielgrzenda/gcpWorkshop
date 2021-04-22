@@ -48,7 +48,7 @@ gcloud compute firewall-rules create ingress-tcp-port80-from-all \
     --action allow \  
     --direction ingress \  
     --rules tcp:80 \  
-    --source-ranges 0.0.0.0/0 \
+    --source-ranges 0.0.0.0/0 \  
     --priority 1000 \  
     --target-tags http-server  
 gcloud compute instances add-tags myvm --tags http-server  
